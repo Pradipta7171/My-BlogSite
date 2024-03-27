@@ -1,0 +1,129 @@
+
+
+.title{
+    margin: 50px 0px;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: 15%;
+    height: 80px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.category.style {
+    background-color: #51afdf31;
+}
+
+.category.style:hover{
+    background-color: rgba(36, 153, 211, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.style:active {
+    transform: translateY(0.125rem);
+}
+
+.category.fashion {
+    background-color: #ca73b731;
+}
+
+.category.fashion:hover{
+    background-color: rgba(189, 76, 179, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.fashion:active {
+    transform: translateY(0.125rem);
+}
+
+.category.food {
+    background-color: #7ac07d33;
+}
+
+.category.food:hover{
+    background-color: rgba(51, 156, 65, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.food:active {
+    transform: translateY(0.125rem);
+}
+
+.category.travel {
+    background-color: #fc775636;
+}
+
+.category.travel:hover{
+    background-color: rgba(233, 89, 45, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.travel:active {
+    transform: translateY(0.125rem);
+}
+
+.category.culture {
+    background-color: #ffb04f45;
+}
+
+.category.culture:hover{
+    background-color: rgba(148, 113, 66, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.culture:active {
+    transform: translateY(0.125rem);
+}
+
+.category.coding {
+    background-color: #a59fe231;
+}
+
+.category.coding:hover{
+    background-color: rgba(93, 88, 131, 0.192);
+    transform: scale(1.05);    
+}
+
+.category.coding:active {
+    transform: translateY(0.125rem);
+}
+
+.image{
+    border-radius: 45%;
+}
+
+@media screen and (max-width:1280px) {
+    .category {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .category {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .category {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .category {
+        width: 100%;
+    }
+}

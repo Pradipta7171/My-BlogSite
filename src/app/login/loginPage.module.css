@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.wrapper {
+    background-color: var(--softBg);
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgb(3, 7, 27),-3px -3px 15px rgb(68, 102, 134);
+    /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+}
+
+.socialButton {
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+}
+
+.socialButton:first-child {
+    background-color: #f43f5e;
+    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(146, 109, 109);
+    
+    
+}
+
+.socialButton:nth-child(2) {
+    background-color: black;
+    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(97, 89, 119);
+}
+
+.socialButton:nth-child(3) {
+    background-color: #3b82f6;
+    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(90, 100, 126);
+}
+
+.socialButton:hover {
+    transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper{
+        padding: 100px 150px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .wrapper{
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .wrapper{
+        padding: 30px;
+    }
+}
+
+

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.button {
+  background-color: #e96c63;
+  border-radius: 5px;
+  color: rgb(248, 244, 244);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 18px;
+  user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1) ;
+}
+
+.button:disabled {
+  background-color: #a58e8e;
+  border-radius: 5px;
+  color: rgb(10, 0, 0);
+  cursor: not-allowed;
+}

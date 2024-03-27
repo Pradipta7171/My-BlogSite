@@ -1,0 +1,14 @@
+.title {
+    margin-top: 20px;
+    background-color: rgb(219, 138, 84);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.content{
+    display: flex;
+    gap: 50px;
+}
