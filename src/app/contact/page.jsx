@@ -1,11 +1,12 @@
 "use client";
-import styles from "./contactPage.module.css"
+import styles from "./contactPage.module.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,12 +23,19 @@ const ContactPage = () => {
           console.log(result.text);
           setSuccessMessage("Your experience has been shared successfully!");
           form.current.reset();
+          setShowPopup(true);
         },
         (error) => {
           console.log(error.text);
           setSuccessMessage("Oops! Something went wrong. Please try again.");
+          setShowPopup(true);
         }
       );
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setSuccessMessage("");
   };
 
   return (
@@ -69,7 +77,14 @@ const ContactPage = () => {
           <span>Share</span>
         </button>
         {successMessage && (
-          <p className={styles.successMessage}>{successMessage}</p>
+          <div className={styles.popup}>
+            <div className={styles.popupContent}>
+              <span className={styles.close} onClick={closePopup}>
+                &times;
+              </span>
+              <p>{successMessage}</p>
+            </div>
+          </div>
         )}
       </form>
     </div>
