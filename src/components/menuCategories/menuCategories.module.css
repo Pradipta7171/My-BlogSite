@@ -13,25 +13,79 @@
 }
 
 .categoryItem.style {
-    background-color: #57c4fa31;
+    background-color: #51afdf31;
+}
+
+.categoryItem.style:hover{
+    background-color: rgba(36, 153, 211, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.style:active {
+    transform: translateY(0.125rem);
 }
 
 .categoryItem.fashion {
-    background-color: #da85c731;
+    background-color: #ca73b731;
+}
+
+.categoryItem.fashion:hover{
+    background-color: rgba(189, 76, 179, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.fashion:active {
+    transform: translateY(0.125rem);
 }
 
 .categoryItem.food {
-    background-color: #7fb88133;
+    background-color: #7ac07d33;
+}
+
+.categoryItem.food:hover{
+    background-color: rgba(51, 156, 65, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.food:active {
+    transform: translateY(0.125rem);
 }
 
 .categoryItem.travel {
-    background-color: #ff795736;
+    background-color: #fc775636;
+}
+
+.categoryItem.travel:hover{
+    background-color: rgba(233, 89, 45, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.travel:active {
+    transform: translateY(0.125rem);
 }
 
 .categoryItem.culture {
     background-color: #ffb04f45;
 }
 
+.categoryItem.culture:hover{
+    background-color: rgba(148, 113, 66, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.culture:active {
+    transform: translateY(0.125rem);
+}
+
 .categoryItem.coding {
-    background-color: #5e4fff31;
+    background-color: #a59fe231;
+}
+
+.categoryItem.coding:hover{
+    background-color: rgba(93, 88, 131, 0.192);
+    transform: scale(1.05);    
+}
+
+.categoryItem.coding:active {
+    transform: translateY(0.125rem);
 }

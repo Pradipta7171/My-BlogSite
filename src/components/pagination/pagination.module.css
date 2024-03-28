@@ -25,6 +25,10 @@
   transform: scale(1.1) ;
 }
 
+.button:active {
+  transform: translateY(0.125rem);
+}
+
 .button:disabled {
   background-color: #a58e8e;
   border-radius: 5px;

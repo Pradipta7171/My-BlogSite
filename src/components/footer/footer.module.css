@@ -29,7 +29,11 @@
 }
 
 .desc{
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.img:hover{
+    transform: scale(1.2);
 }
 
 .icons {

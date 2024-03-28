@@ -18,10 +18,7 @@ const Footer = () => {
           <h1 className={styles.logoText}>Dutta&apos;s Blog</h1>
         </div>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          veniam, quos, animi ex repellat necessitatibus eius provident nesciunt
-          dicta sequi rerum nulla aliquid inventore in. Deserunt deleniti
-          aliquam minima quam.
+           A platform that explores diverse topics with intellectual curiosity, fostering thought-provoking discussions on tech innovations, philosophical insights, and beyond. Join a community eager to learn, engage, and challenge conventions through captivating content and stimulating conversations.
         </p>
         <div className={styles.icons}>
           <a
@@ -29,7 +26,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/facebook.png" alt="facebook" width={20} height={20} />
+            <Image src="/facebook.png" alt="facebook" width={30} height={30} className={styles.img}/>
           </a>
           <a
             href="https://www.instagram.com/p_dutta18?igsh=eHpmNHhtdTRqajkw"
@@ -39,23 +36,24 @@ const Footer = () => {
             <Image
               src="/instagram.png"
               alt="instagram"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
+              className={styles.img}
             />
           </a>
           <a
-            href="www.linkedin.com/in/pradipto-dutta2024"
+            href="https://www.linkedin.com/in/pradipto-dutta2024/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/linkedin.png" alt="linkedin" width={20} height={20} />
+            <Image src="/linkedin.png" alt="linkedin" width={30} height={30} className={styles.img}/>
           </a>
           <a
             href="https://github.com/Pradipta7171"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/github.png" alt="github" width={20} height={20} />
+            <Image src="/github.png" alt="github" width={30} height={30} className={styles.img} />
           </a>
         </div>
       </div>

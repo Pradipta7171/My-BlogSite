@@ -42,8 +42,8 @@
     color: var(--softTextColor);
 }
 
-.button {
-    width: fit-contentd;
+.button {  
+    width: fit-content;
     height: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -96,7 +96,6 @@
 .button:active {
     transform: translateY(0.125rem);
 }
-
 
 .button:hover {
     background-color: rgb(127, 96, 160);

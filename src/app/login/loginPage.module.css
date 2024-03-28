@@ -6,67 +6,128 @@
 }
 
 .wrapper {
-    background-color: var(--softBg);
-    padding: 150px 200px;
+    padding: 120px 150px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     border-radius: 30px;
-    box-shadow: 3px 3px 15px rgb(3, 7, 27),-3px -3px 15px rgb(68, 102, 134);
-    /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+    color: white;
+    background: linear-gradient(43deg, #6276d8 0%, #b659ae 46%, #ebc882 100%);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.socialButton {
-    padding: 20px;
-    font-weight: bold;
-    cursor: pointer;
+.wrapper:hover {
+    rotate: 1deg;
+}
+
+.google {
     display: flex;
+    padding: 22px 27px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
     border-radius: 10px;
-    color: white;
+    border: none;
+    gap: 0.75rem;
+    color: rgb(12, 1, 1);
+    background-color: #fffafa;
+    cursor: pointer;
     transition: 400ms;
 }
 
-.socialButton:first-child {
-    background-color: #f43f5e;
-    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(146, 109, 109);
-    
-    
+.google svg {
+    height: 24px;
 }
 
-.socialButton:nth-child(2) {
-    background-color: black;
-    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(97, 89, 119);
-}
-
-.socialButton:nth-child(3) {
-    background-color: #3b82f6;
-    box-shadow: 3px 3px 15px rgb(1, 2, 7),-3px -3px 15px rgb(90, 100, 126);
-}
-
-.socialButton:hover {
+.google:hover {
     transform: scale(1.2, 1.2);
 }
 
+.google:active {
+    transform: translateY(0.125rem);
+}
+
+.github {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    color: #ffffff;
+    padding: 22px 27px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.github svg {
+    height: 30px;
+}
+
+.github:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.github:active {
+    transform: translateY(0.125rem);
+}
+
+.facebook {
+    display: flex;
+    background-color: #039be5;
+    background-image: linear-gradient(to top right, #0163E0, #18ACFE);
+    color: #ffffff;
+    padding: 20px 19px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.facebook svg {
+    height: 30px;
+}
+
+.facebook:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.facebook:active {
+    transform: translateY(0.125rem);
+}
+
+
 @media screen and (max-width:1024px) {
-    .wrapper{
+    .wrapper {
         padding: 100px 150px;
     }
 }
 
 @media screen and (max-width:780px) {
-    .wrapper{
+    .wrapper {
         padding: 50px 100px;
     }
 }
 
 @media screen and (max-width:650px) {
-    .wrapper{
+    .wrapper {
         padding: 30px;
     }
 }
-
-
