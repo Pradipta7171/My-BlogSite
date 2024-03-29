@@ -34,8 +34,8 @@ const AuthLinks = () => {
       {open && (
         <div className={styles.resposiveMenu}>
           <Link href="/">Homepage</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
           {status === "notauthenticated" ? (
             <Link href="/login">Login</Link>
           ) : (
