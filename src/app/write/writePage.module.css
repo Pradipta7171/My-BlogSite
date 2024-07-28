@@ -6,12 +6,47 @@
     padding: 20px;
 }
 
+/* Select Styles */
+.select {
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    width: max-content;
+    margin-left: 0px;
+    border: 2px solid #6d6c6c;
+    border-radius: 15px;
+    background-color: #dad1c0;
+    font-size: 16px;
+    color: #333;
+    appearance: button;
+    cursor: pointer;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-radius: 15px;
+}
+
+.select option {
+    background-color: #ecebe2;
+    color: #333;
+}
+
+.select option:hover {
+    background-color: #e7bc8a;
+}
+
 /* Editor Styles */
 .editor {
     display: flex;
+    gap: 20px;
     height: 700px;
     position: relative;
-}
+  }
 
 /* Button Styles */
 .button {
@@ -30,10 +65,11 @@
     border-bottom: 3px solid rgb(0, 130, 40);
     box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
     letter-spacing: 0.08em;
-    border-radius: 20em;
+    border-radius: 20px;
     cursor: pointer;
     transition: .3s;
-    height: 50px;
+    width: 50px;
+    height: 35px;
 }
 
 .button:hover {
@@ -48,8 +84,6 @@
 
 /* Add Button Styles */
 .addButton {
-    width: 50px; /* Match the size of the publish button */
-    height: 50px;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #ddd;
@@ -60,7 +94,7 @@
     transition: 0.3s;
     font-family: inherit;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .addButton:hover {
@@ -78,15 +112,16 @@
     background-color: transparent;
     position: absolute;
     z-index: 999;
-    top: 80px; /* Adjusted for spacing from top */
-    left: 20px; /* Adjusted to fit the layout */
+    width: 100%;
+    left: 50px;
 }
 
 /* Input Styles */
 .input {
-    padding: 10px;
-    font-size: 24px;
+    padding: 50px;
+    font-size: 64px;
     display: flex;
+    margin-left: 0px;
     justify-content: center;
     border: none;
     outline: none;
@@ -95,7 +130,8 @@
 }
 
 .input::placeholder {
-    color: #aaaaa8;
+    color: #b3b3b1;
+
 }
 
 /* Text Area Styles */
@@ -103,38 +139,6 @@
     width: 100%;
 }
 
-/* Select Styles */
-.select {
-    margin-bottom: 20px;
-    padding: 15px 40px;
-    width: max-content;
-    margin-left: 0px;
-    border: 2px solid #6d6c6c;
-    border-radius: 15px;
-    background-color: #d6cfc0;
-    font-size: 16px;
-    color: #333;
-    appearance: button;
-    cursor: pointer;
-}
-
-.select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-.select option {
-    background-color: #ecebe2;
-    color: #333;
-}
-
-.select option:hover {
-    background-color: #e7bc8a;
-}
 
 /* Publish Button Styles */
 .publish {
