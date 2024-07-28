@@ -15,7 +15,8 @@
   cursor: pointer;
   display: none;
   position: relative;
-  z-index: 1100; /* Ensure the burger is on top */
+  z-index: 1100;
+  /* Ensure the burger is on top */
 }
 
 .line {
@@ -43,7 +44,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9); /* Blackish blur effect */
+  background: rgba(0, 0, 0, 0.9);
+  /* Blackish blur effect */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,13 +53,17 @@
   gap: 30px;
   font-size: 24px;
   z-index: 1000;
-  overflow: hidden; /* Prevent scrolling */
-  transform: translateX(-100%); /* Start off-screen */
-  transition: transform 0.3s ease-in-out; /* Slide-in effect */
+  overflow: hidden;
+  /* Prevent scrolling */
+  transform: translateX(-100%);
+  /* Start off-screen */
+  transition: transform 0.3s ease-in-out;
+  /* Slide-in effect */
 }
 
 .responsiveMenu.open {
-  transform: translateX(0); /* Slide-in when open */
+  transform: translateX(0);
+  /* Slide-in when open */
 }
 
 .responsiveLink {
@@ -89,4 +95,31 @@
 
 .navbar .link:last-child {
   margin-right: 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #424377;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #42327a;
+}
+
+.button:active {
+  transform: translateY(0.125rem);
+}
+
+.button.logout {
+  background-color: #af3844;
+}
+
+.button.logout:hover {
+  background-color: #8f0d1a;
 }
