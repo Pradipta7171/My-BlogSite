@@ -1,17 +1,19 @@
+/* Base Styles */
 .container {
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
+/* Editor Styles */
 .editor {
     display: flex;
-    gap: 20px;
     height: 700px;
     position: relative;
 }
 
-
+/* Button Styles */
 .button {
     display: flex;
     align-items: center;
@@ -30,7 +32,7 @@
     letter-spacing: 0.08em;
     border-radius: 20em;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
     height: 50px;
 }
 
@@ -44,19 +46,21 @@
     transform: rotate(-10deg);
 }
 
+/* Add Button Styles */
 .addButton {
-    margin-top: 90px;
-    width: 0px;
-    height: 20px;
+    width: 50px; /* Match the size of the publish button */
+    height: 50px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px;
+    border: 1px solid #ddd;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: 400ms;
+    transition: 0.3s;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .addButton:hover {
@@ -67,43 +71,47 @@
     transform: scale(0.95);
 }
 
+/* Add Section Styles */
 .add {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     background-color: transparent;
     position: absolute;
     z-index: 999;
-    width: 100%;
-    left: 50px;
+    top: 80px; /* Adjusted for spacing from top */
+    left: 20px; /* Adjusted to fit the layout */
 }
 
+/* Input Styles */
 .input {
-    padding: 50px;
-    font-size: 64px;
+    padding: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
     border: none;
     outline: none;
     color: var(--textColor);
     background-color: transparent;
-
 }
 
 .input::placeholder {
     color: #aaaaa8;
 }
 
+/* Text Area Styles */
 .textArea {
     width: 100%;
-    margin-left: 40px;
 }
 
+/* Select Styles */
 .select {
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 15px 40px;
     width: max-content;
+    margin-left: 0px;
     border: 2px solid #6d6c6c;
     border-radius: 15px;
-    background-color: #e9e4db;
+    background-color: #d6cfc0;
     font-size: 16px;
     color: #333;
     appearance: button;
@@ -128,6 +136,7 @@
     background-color: #e7bc8a;
 }
 
+/* Publish Button Styles */
 .publish {
     background: #7079f0;
     color: white;
@@ -135,7 +144,7 @@
     padding: 10px 20px;
     font-size: 17px;
     font-weight: 500;
-    border-radius: 0.9em;
+    border-radius: 20em; /* Match the border-radius of addButton */
     border: none;
     cursor: pointer;
     letter-spacing: 0.05em;
@@ -143,10 +152,10 @@
     align-items: center;
     box-shadow: inset 0 0 1.6em -0.6em #714da6;
     overflow: hidden;
-    height: 2.8em;
+    height: 50px; /* Match the height of addButton */
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 140px; /* Align with the logout button */
+    right: 20px; /* Align with the right side of the container */
 }
 
 .publish:hover {
