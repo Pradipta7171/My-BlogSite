@@ -21,7 +21,7 @@ const AuthLinks = () => {
     <>
       <div className={styles.navbar}>
         {status === "unauthenticated" ? (
-          <Link href="/login" className={styles.link}>
+          <Link href="/login" className={`${styles.link} ${styles.button}`}>
             Login
           </Link>
         ) : (
@@ -29,7 +29,7 @@ const AuthLinks = () => {
             <Link href="/write" className={styles.link}>
               Write
             </Link>
-            <span className={styles.link} onClick={signOut}>
+            <span className={`${styles.link} ${styles.button} ${styles.logout}`} onClick={signOut}>
               Logout
             </span>
           </>
@@ -45,11 +45,11 @@ const AuthLinks = () => {
         <Link href="/about" className={styles.responsiveLink} onClick={() => setOpen(false)}>About</Link>
         <Link href="/contact" className={styles.responsiveLink} onClick={() => setOpen(false)}>Contact</Link>
         {status === "unauthenticated" ? (
-          <Link href="/login" className={styles.responsiveLink} onClick={() => setOpen(false)}>Login</Link>
+           <Link href="/login" className={`${styles.responsiveLink} ${styles.button}`} onClick={() => setOpen(false)}>Login</Link>
         ) : (
           <>
             <Link href="/write" className={styles.responsiveLink} onClick={() => setOpen(false)}>Write</Link>
-            <span className={styles.responsiveLink} onClick={() => { signOut(); setOpen(false); }}>Logout</span>
+            <span className={`${styles.responsiveLink} ${styles.button} ${styles.logout}`} onClick={() => { signOut(); setOpen(false); }}>Logout</span>
           </>
         )}
       </div>
