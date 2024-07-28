@@ -1,0 +1,127 @@
+/* General Container Styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ebf0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Section */
+  .features {
+    margin-bottom: 40px;
+  }
+  
+  .features h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .features li {
+    margin-bottom: 20px;
+  }
+  
+  .features li h3 {
+    color: #4CAF50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .features li a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .features li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Benefits Section */
+  .benefits {
+    margin-bottom: 40px;
+  }
+  
+  .benefits h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .benefits li {
+    margin-bottom: 20px;
+  }
+  
+  .benefits li h3 {
+    color: #4CAF50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefits li p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Conclusion Text */
+  .conclusion {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .features h2, .benefits h2 {
+      font-size: 1.6rem;
+    }
+  
+    .features li h3, .benefits li h3 {
+      font-size: 1.2rem;
+    }
+  
+    .features li, .benefits li {
+      font-size: 1rem;
+    }
+  }
+  
