@@ -75,3 +75,18 @@
     display: none;
   }
 }
+
+/* Additional styles to separate the "Write" and "Logout" links */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .link {
+  margin-right: 10px;
+}
+
+.navbar .link:last-child {
+  margin-right: 0;
+}
