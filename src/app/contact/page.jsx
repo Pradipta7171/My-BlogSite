@@ -50,6 +50,7 @@ const ContactPage = () => {
     { icon: FaInstagram, text: "Instagram", href: "https://www.instagram.com/your_instagram" },
   ];
 
+
   return (
     <div className={styles.container}>
       <h1 className={styles.mainTitle}>Get In Touch</h1>
@@ -91,5 +92,8 @@ const ContactPage = () => {
     </div>
   );
 };
+
+export default ContactPage;
+
 
 export default ContactPage;
