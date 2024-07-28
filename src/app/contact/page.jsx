@@ -1,5 +1,5 @@
 "use client";
-import styles from "./contactPage.module.css";
+import styles from "./ContactPage.module.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
@@ -13,7 +13,6 @@ const ContactPage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
-
     emailjs
       .sendForm(
         "service_y0tdwzo",
@@ -21,7 +20,7 @@ const ContactPage = () => {
         form.current,
         "vRjh40jzTDof_884m"
       )
-     .then(
+      .then(
         (result) => {
           console.log(result.text);
           setSuccessMessage("Your message has been sent successfully!");
@@ -43,13 +42,12 @@ const ContactPage = () => {
     setSuccessMessage("");
   };
 
-    const contactDetails = [
+  const contactDetails = [
     { icon: FaEnvelope, text: "prodipto7171@gmail.com", href: "mailto:prodipto7171@gmail.com" },
     { icon: FaLinkedin, text: "LinkedIn", href: "https://www.linkedin.com/in/pradipto-dutta2024" },
     { icon: FaGithub, text: "GitHub", href: "https://github.com/Pradipta7171" },
     { icon: FaInstagram, text: "Instagram", href: "https://www.instagram.com/your_instagram" },
   ];
-
 
   return (
     <div className={styles.container}>
@@ -94,4 +92,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
