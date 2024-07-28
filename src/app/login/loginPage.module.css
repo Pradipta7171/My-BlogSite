@@ -2,132 +2,114 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
-}
-
-.wrapper {
-    padding: 120px 150px;
+    border-radius: 30px;
+    min-height: 60vh;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(64, 69, 73, 0.15);  /* Increased opacity for more visibility */
+    backdrop-filter: blur(15px);  /* Increased blur */
+  }
+  
+  .wrapper {
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    border-radius: 30px;
-    color: white;
-    background: linear-gradient(43deg, #6276d8 0%, #b659ae 46%, #ebc882 100%);
-    border: 2px solid transparent;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.wrapper:hover {
-    rotate: 1deg;
-}
-
-.google {
-    display: flex;
-    padding: 22px 27px;
-    font-size: 0.875rem;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: rgba(12, 11, 17, 0.9);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 48px rgba(31, 38, 135, 0.3);
+  }
+  
+  .title {
+    font-size: 28px;
     font-weight: bold;
+    color: #ffffff; /* Changed to white for better contrast */
     text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
     border: none;
-    gap: 0.75rem;
-    color: rgb(12, 1, 1);
-    background-color: #fffafa;
+    border-radius: 50px;
     cursor: pointer;
-    transition: 400ms;
-}
-
-.google svg {
+    transition: all 0.3s ease;
+    color: #ffffff;
+ /* More transparent */
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ /* Slightly less transparent on hover */
+  }
+  
+  .button:active {
+    transform: translateY(0);
+  }
+  
+  .icon {
+    width: 24px;
     height: 24px;
-}
-
-.google:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.google:active {
-    transform: translateY(0.125rem);
-}
-
-.github {
+    margin-right: 12px;
+  }
+  
+  .google {
+    background-color: #DB4437;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .facebook {
+    background-color: #4267B2;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      padding: 30px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+  
+  .loading {
     display: flex;
-    background-color: rgb(24, 23, 23);
-    color: #ffffff;
-    padding: 22px 27px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    border: none;
-    gap: 0.75rem;
-    border: none;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.github svg {
-    height: 30px;
-}
-
-.github:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.github:active {
-    transform: translateY(0.125rem);
-}
-
-.facebook {
-    display: flex;
-    background-color: #039be5;
-    background-image: linear-gradient(to top right, #0163E0, #18ACFE);
-    color: #ffffff;
-    padding: 20px 19px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    text-align: center;
     align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: none;
-    gap: 0.75rem;
-    border: none;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.facebook svg {
-    height: 30px;
-}
-
-.facebook:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.facebook:active {
-    transform: translateY(0.125rem);
-}
-
-
-@media screen and (max-width:1024px) {
-    .wrapper {
-        padding: 100px 150px;
-    }
-}
-
-@media screen and (max-width:780px) {
-    .wrapper {
-        padding: 50px 100px;
-    }
-}
-
-@media screen and (max-width:650px) {
-    .wrapper {
-        padding: 30px;
-    }
-}
+    height: 100vh;
+    font-size: 24px;
+    color: #ffffff;
+  }
