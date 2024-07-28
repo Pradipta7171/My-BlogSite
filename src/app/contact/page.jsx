@@ -1,5 +1,5 @@
 "use client";
-import styles from "./ContactPage.module.css";
+import styles from "./contactPage.module.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
