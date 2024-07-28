@@ -2,140 +2,146 @@
 .container {
     max-width: 800px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px auto;
     padding: 2rem;
     font-family: Arial, sans-serif;
-  }
-  
-  .mainTitle {
+}
+
+.mainTitle {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #333;
     text-align: center;
-  }
-  
-  .contactCard {
+}
+
+.contactCard {
     display: flex;
+    flex-direction: column;
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contactInfo {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contactInfo {
     padding: 2rem;
-    width: 40%;
-    background: #2c3e50;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
     color: #fff;
-  }
-  
-  .infoTitle {
+    text-align: center;
+}
+
+.infoTitle {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .infoText {
+}
+
+.infoText {
     margin-bottom: 1.5rem;
-  }
-  
-  .contactDetails {
+}
+
+.contactDetails {
     margin-top: 1.5rem;
-  }
-  
-  .contactItem {
+}
+
+.contactItem {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .contactItem:hover {
+    justify-content: center;
+}
+
+.contactItem:hover {
     color: #bdc3c7;
-  }
-  
-  .icon {
+}
+
+.icon {
     margin-right: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .form {
-    background: linear-gradient(135deg, #4b79a1, #283e51);
+    font-size: 1.25rem;
+}
+
+.form {
+    background: #f3f3f3;
     padding: 2rem;
-    width: 60%;
-  }
-  
-  .formGroup {
+    width: 100%;
+}
+
+.formGroup {
     margin-bottom: 1.5rem;
-  }
-  
-  .label {
+}
+
+.label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #333;
-  }
-  
-  .input,
-  .textarea {
+}
+
+.input,
+.textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #bdc3c7;
     border-radius: 4px;
     font-size: 1rem;
     background: #fff;
-  }
-  
-  .textarea {
+}
+
+.textarea {
     height: 120px;
     resize: vertical;
-  }
-  
-  .button {
+}
+
+.button {
     background: linear-gradient(135deg, #4b79a1, #283e51);
     color: #fff;
     border: none;
     padding: 0.75rem 2rem;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .button:hover {
+    width: 100%;
+}
+
+.button:hover {
     background: #283e51;
-  }
-  
-  .button:disabled {
+}
+
+.button:disabled {
     background: #95a5a6;
     cursor: not-allowed;
-  }
-  
-  .button .icon {
+}
+
+.button .icon {
     margin-left: 0.5rem;
-  }
-  
-  .loader {
+}
+
+.loader {
     border: 4px solid #f3f3f3;
     border-radius: 50%;
     border-top: 4px solid #3498db;
     width: 20px;
     height: 20px;
     animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
-  
-  .popup {
+}
+
+.popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -145,9 +151,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .popupContent {
+}
+
+.popupContent {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -156,24 +162,25 @@
     max-width: 400px;
     width: 80%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 0.5rem;
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .contactCard {
-      flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
     }
-  
+
     .contactInfo,
     .form {
-      width: 100%;
+        width: 100%;
+        padding: 1.5rem;
     }
-  }
-  
+}
