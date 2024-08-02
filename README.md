@@ -1,3 +1,59 @@
+# Dutta's Blog
+
+A personal blog site built with Next.js, MongoDB, and Prisma.
+
+![Dutta's Blog Screenshot](path/to/screenshot.png)
+
+## Features
+
+- Responsive design
+- Dynamic content loading
+- User authentication
+- Blog post creation and management
+- Categories and tags
+- Search functionality
+
+## Tech Stack
+
+- Frontend: Next.js, React
+- Backend: Node.js, Express
+- Database: MongoDB
+- ORM: Prisma
+- Styling: CSS Modules / Tailwind CSS (choose one)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- MongoDB
+
+### Installation
+
+1. Clone the repository:
+
+## Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+Briefly explain your project's folder structure here.
+
+## Deployment
+
+Add instructions for deploying your blog site.
+
+## Contributing
+
+Guidelines for contributing to your project.
+
+## License
+
+Specify your project's license here.
+
+## Acknowledgments
+
+Any credits or acknowledgments you want to include.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
