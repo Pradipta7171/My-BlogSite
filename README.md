@@ -2,7 +2,7 @@
 
 A personal blog site built with Next.js, MongoDB, and Prisma.
 
-![Dutta's Blog Screenshot](Screenshot 2024-08-02 142712.png)
+![Dutta's Blog Screenshot](./Screenshot 2024-08-02 142712.png)
 
 ## Features
 
