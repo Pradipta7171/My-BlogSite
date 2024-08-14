@@ -3,7 +3,7 @@
 }
 
 .title {
-    font-size: 85px;
+    font-size: 94px;
     font-weight: 300;
 }
 
@@ -16,7 +16,7 @@
 
 .imgContainer {
     flex: 1;
-    height: 500px;
+    height: 600px;
     position: relative;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .postTitle {
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .postDesc {
@@ -156,13 +156,13 @@
 
 @media screen and (max-width:1280px) {
     .title {
-        font-size: 60px;
+        font-size: 70px;
     }
 }
 
 @media screen and (max-width:1024px) {
     .title {
-        font-size: 54px;
+        font-size: 64px;
     }
 
     .imgContainer {
